@@ -28,7 +28,16 @@ I've work on my BOM with all documentation, choice of ESP32-S3 to management bet
 
 I will made a little box in PLA with my 3D Printer for put all component but no PCB needed for this project, I have cable at home for this project.
 
-For a total of 24,82€
-
 **Total time spent: 3 hours**
 
+# June 18: Electric scheme
+I made electrical scheme with all component:
+![alt text](image-1.png)
+
+For a total of 24,82€ arround $28,55
+
+One of my actual question is on Alimentation (Jack at the base) but I will try to cut the cable and sort +5V and GND cable from this
+
+I spend lot of time in my scheme (ChatGPT fail for response me with the PIN of W5500 and no technical docs ?)
+
+**Total time spent: 2 hours**
