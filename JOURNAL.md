@@ -41,3 +41,15 @@ One of my actual question is on Alimentation (Jack at the base) but I will try t
 I spend lot of time in my scheme (ChatGPT fail for response me with the PIN of W5500 and no technical docs ?)
 
 **Total time spent: 2 hours**
+
+# June 19: Casing in fusion 360
+Beautiful casing made on Fusion 360:
+![alt text](image-2.png)
+![alt text](image-3.png)
+
+This case sliced:
+![alt text](image-4.png)
+
+101g of 3d filament + bottom plate for finish the build (I need 250g of filament from forge I will make demand for this)
+
+**Total time spent: 2 hours**
