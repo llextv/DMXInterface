@@ -151,3 +151,45 @@ Universe 2 -> DMX OUT 3
 Universe 3 -> DMX OUT 4
 
 **Total time spent: 2 hours**
+
+# July 18 & 19: Response about changes needed
+I receive this message:
+Hey, nice project and amazing effort, but there is few things to fix before getting approved!
+
+    You need to have solid way to mount the electronic components inside your case. Try designing holder OR make holes in your case so you can use screws and nuts to mount them.
+    Regarding schematics, you have connected the red wire from the external power adapter directly to the ESP32’s 3V3 pin. This will send too much voltage (5V+) into the ESP32’s internal 3.3V line, which could destroy the main chip. Try connecting it to 5V.
+
+
+So two problems:
+- schematic with 5V injected in ESP
+- casing with no block system for card
+
+For solution of first problem:
+An idea is to change the card ESP-C3 to ESP-WROOM-32, I test at home, it's works, for 5.89€ so it's lower than ESP-C3 and 5V pin are here ...
+
+So new BOM:
+
+| Catégorie     | Article                                | Quantité | Prix unitaire (€) | Prix total (€) | Notes                | URL                                                                                                          |
+| ------------- | -------------------------------------- | -------: | ----------------: | -------------: | -------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Communication | W5500                                  |        1 |              3.89 |           3.89 |                      | [https://fr.aliexpress.com/item/1005009353017777.html](https://fr.aliexpress.com/item/1005009353017777.html) |
+| Communication | MAX485 Module RS-485                   |        4 |              0.83 |           3.32 |                      | [https://fr.aliexpress.com/item/1005007011742123.html](https://fr.aliexpress.com/item/1005007011742123.html) |
+| Controls      | ESP32-WROOM-32                         |        1 |              5.89 |           5.89 |                      | [https://fr.aliexpress.com/item/1005012697513614.html](https://fr.aliexpress.com/item/1005012697513614.html) |
+| Connectique   | XLR 3Pin Panel Mount Connectors Female |        4 |              1.05 |           4.19 | Lot de 4 connecteurs | [https://fr.aliexpress.com/item/1005008919369057.html](https://fr.aliexpress.com/item/1005008919369057.html) |
+| Power         | Alimentation 5V 2A                     |        1 |              2.99 |           2.99 |                      | [https://fr.aliexpress.com/item/1005005539475429.html](https://fr.aliexpress.com/item/1005005539475429.html) |
+| Prototype     | 12 Holes Bridge                        |        2 |              2.37 |           4.74 |                      | [https://fr.aliexpress.com/item/1005001742109041.html](https://fr.aliexpress.com/item/1005001742109041.html) |
+| **TOTAL**     |                                        |          |                   |      **25.02** |                      |                                                                                                              |
+
+
+New scheme:
+[Scheme](assets\DMXInterface.pdn)
+
+I made this for block ESP-WROOM-32
+![alt text](image-6.png)
+
+This for block MAX485
+![alt text](image-7.png)
+
+This is monting on assembly
+![alt text](image-8.png)
+
+**Total time spent: 3.5 hours**

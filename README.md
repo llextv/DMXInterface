@@ -104,8 +104,8 @@ void loop()
 ```
 
 **Files**
-[Case](assets\DMXInterface.f3d)
-[Scheme](assets\DJController.pdn)
+[Case](assets\AssemblageDMXInterface.step)
+[Scheme](assets\DMXInterface.pdn)
 
 
 ## BOM
