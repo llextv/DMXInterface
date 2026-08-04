@@ -16,7 +16,8 @@ See the BOM in [bom.csv](BOM.csv) or at the end of file
 ![alt text](image-2.png)
 ![alt text](image-3.png)
 ![alt text](image-4.png)
-
+[text](assets/BottomDMXInterface.step)
+[text](assets/DMXInterface.step)
 
 **Scheme:**
 ![alt text](image-1.png)
@@ -104,7 +105,7 @@ void loop()
 ```
 
 **Files**
-[Case](assets\AssemblageDMXInterface.step)
+[assets/AssemblageDMXInterface.step](assets/AssemblageDMXInterface.step)
 [Scheme](assets\DMXInterface.pdn)
 
 

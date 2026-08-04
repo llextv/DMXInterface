@@ -193,3 +193,23 @@ This is monting on assembly
 ![alt text](image-8.png)
 
 **Total time spent: 3.5 hours**
+
+
+# New response !
+I have received this message:
+"Hi, this is a cool project, and the idea is really interesting, but it needs some polishing before we can accept it! It doesn't have a custom PCB, and that's totally fine, but that means that your case should be a bit more refined. Right now I don't see how the different parts are supposed to stay together, and there's no base on your container! I don't know how much CAD experience you have, but this is a great opportunity to learn it better. I'd love to see a design-optimized case with a removable back panel, easy screw & heatset insert mounts for the esp32 and other components, and maybe even dedicated wire paths and routing helps to make it extra satisfying and easy to set up. Overall, I love the idea, but I'd just like to see it worked through a little more."
+
+3 problems detected in your message:
+
+The container/enclosure does not have a base.
+-> ![alt text](image-11.png)
+The case design is not refined enough.
+-> ![alt text](image-9.png) I polish it
+No screw mounts or heat-set insert locations are included.
+->![alt text](image-10.png)
+I made hole in my case
+
+I remade render and assembly for this
+assets\DMXInterface.step
+assets\BottomDMXInterface.step
+assets\AssemblageDMXInterface.step
