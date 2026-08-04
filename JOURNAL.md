@@ -213,3 +213,5 @@ I remade render and assembly for this
 assets\DMXInterface.step
 assets\BottomDMXInterface.step
 assets\AssemblageDMXInterface.step
+
+**Total time spent: 2.5 hours**
