@@ -1,28 +1,76 @@
-**DMX Interface**
-DIY Interface between Ethernet --> DMX (ArtNet to DMX) work with 4 DMX universe
+# DMX Interface — ArtNet to DMX Converter
 
-## Overview
-Features:
-- 3D printable enclosure
+A DIY Ethernet-to-DMX interface designed to convert **ArtNet signals into DMX output**.
+
+This project provides a compact, low-cost and reproducible solution capable of controlling **4 independent DMX universes** through an Ethernet connection.
+
+---
+
+# Overview
+
+## Features
+
+- Fully 3D printable enclosure
 - Low-cost and easily reproducible design
-- Ethernet Input (ArtNet)
-- 4 DMX Output
+- Ethernet input using ArtNet protocol
+- 4 independent DMX output universes
+- Standard DMX XLR outputs
+- Open-source hardware and software
 
-## Hardware
-See the BOM in [bom.csv](BOM.csv) or at the end of file
+---
 
-## Recap:
-**Case:**
-![alt text](image-2.png)
-![alt text](image-3.png)
-![alt text](image-4.png)
-[text](assets/BottomDMXInterface.step)
-[text](assets/DMXInterface.step)
+# Hardware
 
-**Scheme:**
-![alt text](image-1.png)
+The complete Bill of Materials is available in:
 
-**Script**
+[BOM.csv](BOM.csv)
+
+A detailed BOM is also available at the end of this document.
+
+---
+
+# Mechanical Design
+
+The enclosure was designed to be fully 3D printable, allowing easy reproduction and customization.
+
+## Case
+
+![DMX Interface enclosure](Pictures/image-2.png)
+
+![DMX Interface enclosure](Pictures/image-3.png)
+
+![DMX Interface enclosure](Pictures/image-4.png)
+
+## CAD Files
+
+- [Bottom DMX Interface](assets/BottomDMXInterface.step)
+- [DMX Interface Enclosure](assets/DMXInterface.step)
+
+---
+
+# Electronic Design
+
+## Schematic
+
+![DMX Interface schematic](Pictures/image-1.png)
+
+---
+
+# Firmware
+
+The interface is based on an ESP32 and provides conversion between ArtNet and DMX protocols.
+
+Main features:
+
+- Ethernet communication through a W5500 module
+- ArtNet protocol support
+- Four independent DMX output channels
+- RS-485 communication using MAX485 modules
+
+The firmware receives ArtNet DMX packets and forwards each universe to its corresponding DMX output.
+
+## Main Script
+
 ```c
 #include <SPI.h>
 #include <Ethernet_Generic.h>
@@ -63,16 +111,19 @@ void onDmxFrame(uint16_t universe, uint16_t length, uint8_t sequence, uint8_t* d
       for(int i=0;i<length;i++)
         dmx1.write(i + 1, data[i]);
       break;
+
     case 1:
       memcpy(universe1, data, length);
       for(int i=0;i<length;i++)
         dmx2.write(i + 1, data[i]);
       break;
+
     case 2:
       memcpy(universe2, data, length);
       for(int i=0;i<length;i++)
         dmx3.write(i + 1, data[i]);
       break;
+
     case 3:
       memcpy(universe3, data, length);
       for(int i=0;i<length;i++)
@@ -85,16 +136,21 @@ void setup()
 {
   Serial.begin(115200);
   Serial.println("DMX Interface Starting");
+
   Ethernet.init(W5500_CS);
   Ethernet.begin(mac, ip);
+
   Serial.print("IP: ");
   Serial.println(Ethernet.localIP());
+
   dmx1.init(DMX1_TX);
   dmx2.init(DMX2_TX);
   dmx3.init(DMX3_TX);
   dmx4.init(DMX4_TX);
+
   artnet.begin();
   artnet.setArtDmxCallback(onDmxFrame);
+
   Serial.println("ArtNet Ready");
 }
 
@@ -102,20 +158,3 @@ void loop()
 {
   artnet.read();
 }
-```
-
-**Files**
-[assets/AssemblageDMXInterface.step](assets/AssemblageDMXInterface.step)
-[Scheme](assets\DMXInterface.pdn)
-
-
-## BOM
-| Catégorie     | Article                                | Quantité | Prix unitaire (€) | Prix total (€) | Notes                | URL                                                                                                          |
-| ------------- | -------------------------------------- | -------: | ----------------: | -------------: | -------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Communication | W5500                                  |        1 |              3.89 |           3.89 |                      | [https://fr.aliexpress.com/item/1005009353017777.html](https://fr.aliexpress.com/item/1005009353017777.html) |
-| Communication | MAX485 Module RS-485                   |        4 |              0.83 |           3.32 |                      | [https://fr.aliexpress.com/item/1005007011742123.html](https://fr.aliexpress.com/item/1005007011742123.html) |
-| Controls      | ESP32-WROOM-32                         |        1 |              5.89 |           5.89 |                      | [https://fr.aliexpress.com/item/1005012697513614.html](https://fr.aliexpress.com/item/1005012697513614.html) |
-| Connectique   | XLR 3Pin Panel Mount Connectors Female |        4 |              1.05 |           4.19 | Lot de 4 connecteurs | [https://fr.aliexpress.com/item/1005008919369057.html](https://fr.aliexpress.com/item/1005008919369057.html) |
-| Power         | Alimentation 5V 2A                     |        1 |              2.99 |           2.99 |                      | [https://fr.aliexpress.com/item/1005005539475429.html](https://fr.aliexpress.com/item/1005005539475429.html) |
-| Prototype     | 12 Holes Bridge                        |        2 |              2.37 |           4.74 |                      | [https://fr.aliexpress.com/item/1005001742109041.html](https://fr.aliexpress.com/item/1005001742109041.html) |
-| **TOTAL**     |                                        |          |                   |      **25.02** |                      |                                                                                                              |

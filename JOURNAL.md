@@ -10,7 +10,7 @@ I would like to create a system base on ESP with two main component:
 -> DMX Interface
 -> Ethernet Interface
 
-![alt text](image.png)
+![alt text](Pictures/image.png)
 
 Management of 4 universe is good so we need 4 DMX interface and software for distribute DMX to good interface
 
@@ -32,7 +32,7 @@ I will made a little box in PLA with my 3D Printer for put all component but no 
 
 # June 18: Electric scheme
 I made electrical scheme with all component:
-![alt text](image-1.png)
+![alt text](Pictures/image-1.png)
 
 For a total of 24,82€ arround $28,55
 
@@ -44,11 +44,11 @@ I spend lot of time in my scheme (ChatGPT fail for response me with the PIN of W
 
 # June 19: Casing in fusion 360
 Beautiful casing made on Fusion 360:
-![alt text](image-2.png)
-![alt text](image-3.png)
+![alt text](Pictures/image-2.png)
+![alt text](Pictures/image-3.png)
 
 This case sliced:
-![alt text](image-4.png)
+![alt text](Pictures/image-4.png)
 
 101g of 3d filament + bottom plate for finish the build (I need 250g of filament from forge I will make demand for this)
 
@@ -136,7 +136,7 @@ void loop()
   artnet.read();
 }
 ```
-![alt text](image-5.png)
+![alt text](Pictures/image-5.png)
 It's works for compil but I have trouble with my dev ESP card at home, I search for issue but find nothing, it's can be in ESP32DMX lib 
 
 For config in QLC+:
@@ -184,13 +184,13 @@ New scheme:
 [Scheme](assets\DMXInterface.pdn)
 
 I made this for block ESP-WROOM-32
-![alt text](image-6.png)
+![alt text](Pictures/image-6.png)
 
 This for block MAX485
-![alt text](image-7.png)
+![alt text](Pictures/image-7.png)
 
 This is monting on assembly
-![alt text](image-8.png)
+![alt text](Pictures/image-8.png)
 
 **Total time spent: 3.5 hours**
 
@@ -202,11 +202,11 @@ I have received this message:
 3 problems detected in your message:
 
 The container/enclosure does not have a base.
--> ![alt text](image-11.png)
+-> ![alt text](Pictures/image-11.png)
 The case design is not refined enough.
--> ![alt text](image-9.png) I polish it
+-> ![alt text](Pictures/image-9.png) I polish it
 No screw mounts or heat-set insert locations are included.
-->![alt text](image-10.png)
+->![alt text](Pictures/image-10.png)
 I made hole in my case
 
 I remade render and assembly for this
@@ -215,3 +215,20 @@ assets\BottomDMXInterface.step
 assets\AssemblageDMXInterface.step
 
 **Total time spent: 2.5 hours**
+
+# New response ! Pt 2
+I received:
+"Hi Léo! great work, but please add a complete CAD assembly, with all components (including electronics). you can download cad of the components from grab cad and position them to their assigned places, it will help us in finding any issues (if exists). Also please organize the repo, add all the images in a folder, you can also improve your readme formatting (it will greatly improve the looks of your readme), please do the required changes and we will have another look :)"
+
+So problems are:
+- Images folder (organisation of repo)
+-> Good
+- README ameliorations
+-> its good
+- CAD Assembly files
+-> exported :)
+- Add mecanic components
+-> This is good:
+![alt text](Pictures/assembler.png)
+
+**Total time spent: 0.5 hours**
