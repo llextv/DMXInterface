@@ -244,6 +244,7 @@ I reveived:
 "
 
 --> Organisation of repo ==> OK !
+![alt text](Pictures\imagef.png)
 --> Assembly ==> I add it
 --> MAX485 ==> I changed it to MAX3485 (https://fr.aliexpress.com/item/1005006007545162.html) and update BOM but nothing change on scheme
 --> I havent KiCad scheme but now I made one for each project
