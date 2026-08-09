@@ -45,7 +45,7 @@ The enclosure was designed to be fully 3D printable, allowing easy reproduction 
 
 - [Bottom DMX Interface](cad/BottomDMXInterface.step)
 - [DMX Interface Enclosure](cad/DMXInterface.step)
-
+- [Assembly](cad/AssemblageDMXInterface.step)
 ---
 
 # Electronic Design

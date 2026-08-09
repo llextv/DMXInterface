@@ -218,7 +218,7 @@ assets\AssemblageDMXInterface.step
 
 # New response ! Pt 2
 I received:
-"Hi Léo! great work, but please add a complete CAD assembly, with all components (including electronics). you can download cad of the components from grab cad and position them to their assigned places, it will help us in finding any issues (if exists). Also please organize the repo, add all the images in a folder, you can also improve your readme formatting (it will greatly improve the looks of your readme), please do the required changes and we will have another look :)"
+"Hi! great work, but please add a complete CAD assembly, with all components (including electronics). you can download cad of the components from grab cad and position them to their assigned places, it will help us in finding any issues (if exists). Also please organize the repo, add all the images in a folder, you can also improve your readme formatting (it will greatly improve the looks of your readme), please do the required changes and we will have another look :)"
 
 So problems are:
 - Images folder (organisation of repo)
@@ -230,5 +230,22 @@ So problems are:
 - Add mecanic components
 -> This is good:
 ![alt text](Pictures/assembler.png)
+
+**Total time spent: 0.5 hours**
+
+# New response ! Pt 3
+I reveived: 
+"Hi! Nice project, but there are a few problems rn that need to be fixed:
+
+    your repo is not organised; it'd be great if you put respective files into their respective folders, such as cad/, firmware/, etc.
+    I don't see a way on how you are going to assemble your enclosure.
+    The MAX485 module that you are using right now works on 5V logic, but your ESP32 works on 3.3V logic; this will fry your MCU. Please have a voltage divider/level shifter. It'd be better if you used any other 3.3v logic modules, such as those based on MAX3485.
+    Not required though, but schematic made in kicad would generally be more easier to read than this one.
+"
+
+--> Organisation of repo ==> OK !
+--> Assembly ==> I add it
+--> MAX485 ==> I changed it to MAX3485 (https://fr.aliexpress.com/item/1005006007545162.html) and update BOM but nothing change on scheme
+--> I havent KiCad scheme but now I made one for each project
 
 **Total time spent: 0.5 hours**
