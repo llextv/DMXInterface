@@ -43,8 +43,8 @@ The enclosure was designed to be fully 3D printable, allowing easy reproduction 
 
 ## CAD Files
 
-- [Bottom DMX Interface](assets/BottomDMXInterface.step)
-- [DMX Interface Enclosure](assets/DMXInterface.step)
+- [Bottom DMX Interface](cad/BottomDMXInterface.step)
+- [DMX Interface Enclosure](cad/DMXInterface.step)
 
 ---
 
