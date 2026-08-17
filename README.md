@@ -52,7 +52,7 @@ The enclosure was designed to be fully 3D printable, allowing easy reproduction 
 
 ## Schematic
 
-![DMX Interface schematic](Pictures/image-1.png)
+![DMX Interface schematic](Pictures/scheme2.png)
 
 ---
 

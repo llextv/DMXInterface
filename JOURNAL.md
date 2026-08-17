@@ -250,3 +250,11 @@ I reveived:
 --> I havent KiCad scheme but now I made one for each project
 
 **Total time spent: 0.5 hours**
+
+# New message = new scheme
+I received:
+you've changed the rs-485 transceiver from the max485 to the max3485 in your bom, but the wiring diagram still shows the old max485 modules. please update the diagram to show the exact max3485 modules being used and make sure the connections match the final design.
+
+so It's now patched !
+![alt text](Pictures/scheme2.png)
+**Total time spent: 0.25 hours**
