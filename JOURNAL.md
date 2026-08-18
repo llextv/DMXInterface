@@ -258,3 +258,9 @@ you've changed the rs-485 transceiver from the max485 to the max3485 in your bom
 so It's now patched !
 ![alt text](Pictures/scheme2.png)
 **Total time spent: 0.25 hours**
+
+# New message Pt 5
+"Hi, nice project, but you need a bom in your readme file"
+I made a new BOM in readme so it's patched !
+Thanks for your time and your response
+![alt text](Pictures/bomupdate.png)

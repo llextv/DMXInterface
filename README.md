@@ -158,3 +158,14 @@ void loop()
 {
   artnet.read();
 }
+```
+## BOM
+| Catégorie | Article | Quantité | Prix unitaire (€) | Prix total (€) | Notes | URL |
+|---|---|---:|---:|---:|---|---|
+| Communication | W5500 | 1 | 3,89 | 3,89 | | https://fr.aliexpress.com/item/1005009353017777.html |
+| Communication | MAX3485 Module RS-485 | 4 | 1,40 | 5,60 | | https://fr.aliexpress.com/item/1005006007545162.html |
+| Controls | ESP-WROOM-32 | 1 | 5,89 | 5,89 | | https://fr.aliexpress.com/item/1005012697513614.html |
+| Connectique | XLR 3Pin Panel Mount Connectors Female | 4 | 1,05 | 4,19 | Lot de 4 connecteurs | https://fr.aliexpress.com/item/1005008919369057.html |
+| Power | Alimentation 5V 2A | 1 | 2,99 | 2,99 | | https://fr.aliexpress.com/item/1005005539475429.html |
+| Prototype | 12 Holes Bridge | 2 | 2,37 | 4,74 | | https://fr.aliexpress.com/item/1005001742109041.html |
+| **TOTAL** | | | | **27,30 €** | | |
