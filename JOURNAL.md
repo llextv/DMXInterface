@@ -264,3 +264,5 @@ so It's now patched !
 I made a new BOM in readme so it's patched !
 Thanks for your time and your response
 ![alt text](Pictures/bomupdate.png)
+
+**Total time spent: 0.1 hours**
