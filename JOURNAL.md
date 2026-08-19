@@ -266,3 +266,10 @@ Thanks for your time and your response
 ![alt text](Pictures/bomupdate.png)
 
 **Total time spent: 0.1 hours**
+
+# New message Pt 6
+I received: hey, nice project, but you need a full cad assembly of your project with electronics in your repo, both the file and pictures
+
+Thanks for your time
+![DMX Interface enclosure](Pictures/assf.png)
+It's updated !

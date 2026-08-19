@@ -42,7 +42,7 @@ The enclosure was designed to be fully 3D printable, allowing easy reproduction 
 ![DMX Interface enclosure](Pictures/image-4.png)
 
 ## CAD Files
-
+![DMX Interface enclosure](Pictures/assf.png)
 - [Bottom DMX Interface](cad/BottomDMXInterface.step)
 - [DMX Interface Enclosure](cad/DMXInterface.step)
 - [Assembly](cad/AssemblageDMXInterface.step)
