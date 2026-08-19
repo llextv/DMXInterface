@@ -273,3 +273,5 @@ I received: hey, nice project, but you need a full cad assembly of your project 
 Thanks for your time
 ![DMX Interface enclosure](Pictures/assf.png)
 It's updated !
+
+**Total time spent: 0.2 hours**
