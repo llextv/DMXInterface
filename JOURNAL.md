@@ -275,3 +275,20 @@ Thanks for your time
 It's updated !
 
 **Total time spent: 0.2 hours**
+
+# New message Pt 7
+I received: 
+Cool project! There's a couple changes that need to be made:
+
+    The case needs to be polished a bit more, especially because you're not using a custom PCB/perfboard
+    Please make your README more detailed - explain some more about what your project does and what the process of building it would be like
+
+This is looking really good! Make those changes and send it back!
+
+I finish polishing it with edit of Case file & Bottom file:
+![alt text](Pictures/editcase.png)
+
+and I edit README
+I write it and ask AI to transform it in good english and good Markdown
+
+**Total time spent: 0.5 hours**
