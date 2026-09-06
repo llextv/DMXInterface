@@ -292,3 +292,12 @@ and I edit README
 I write it and ask AI to transform it in good english and good Markdown
 
 **Total time spent: 0.5 hours**
+
+# New message Pt 8
+I received:
+hiii your read me seems to be re written by an llm please write it yourself!
+
+So I update it
+![alt text](Pictures\rm.png)
+
+**Total time spent: 0.15 hours**
