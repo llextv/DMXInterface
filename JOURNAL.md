@@ -307,5 +307,6 @@ I received:
 Hey there! I noticed that you polished in your case in a past journal, could you please update your README with the new case and also create a full assembly that puts the base with all the electronics, into your larger enclosure to show how everything fits together
 
 So I just update the README & assembly
+![DMX Interface enclosure](Pictures/ass2.png)
 
 **Total time spent: 0.15 hours**
