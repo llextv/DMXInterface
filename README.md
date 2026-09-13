@@ -50,11 +50,10 @@ The enclosure can therefore be reproduced using a standard FDM 3D printer.
 
 The CAD files are provided in STEP format so that the enclosure can be modified using most modern CAD software.
 
-![DMX Interface enclosure](Pictures/assf.png)
-
+![DMX Interface enclosure](Pictures/ass2.png)
 * [Bottom DMX Interface](cad/BottomDMXInterface.step)
 * [DMX Interface Enclosure](cad/DMXInterface.step)
-* [Assembly](cad/AssemblageDMXInterface.step)
+* [Assembly](cad\AssemblageDMXInterfaceF.step)
 
 ---
 
