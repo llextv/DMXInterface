@@ -310,3 +310,10 @@ So I just update the README & assembly
 ![DMX Interface enclosure](Pictures/ass2.png)
 
 **Total time spent: 0.15 hours**
+
+# New message Pt 10
+Update it and push 
+![DMX Interface enclosure]([Pictures/ass2.png](https://cdn.hackclub.com/01a1bc5d-b88d-7a47-bc94-a93750c0ac9d/Capture%20d'%C3%A9cran%202026-11-08%20191309.png)
+
+I put DMX OUTPUT panel mount component on 3d
+**Total time spent: 0.15 hours**
